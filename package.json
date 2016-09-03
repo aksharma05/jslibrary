@@ -1,0 +1,25 @@
+{
+  "name": "jslibrary",
+  "version": "1.0.0",
+  "description": "this is the testing jslibrary learning tutorial",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksharma05/jslibrary.git"
+  },
+  "keywords": [
+    "jslibrary"
+  ],
+  "author": "ashish <mypage.vicky@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aksharma05/jslibrary/issues"
+  },
+  "homepage": "https://github.com/aksharma05/jslibrary#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}
