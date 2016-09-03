@@ -1,93 +1,98 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   '--save',
-1 verbose cli   'unique-customer-name' ]
+1 verbose cli   'publish' ]
 2 info using npm@3.3.12
 3 info using node@v5.4.0
-4 silly loadCurrentTree Starting
-5 silly install loadCurrentTree
-6 silly install readLocalPackageData
-7 silly fetchPackageMetaData unique-customer-name
-8 silly fetchNamedPackageData unique-customer-name
-9 silly mapToRegistry name unique-customer-name
-10 silly mapToRegistry using default registry
-11 silly mapToRegistry registry https://registry.npmjs.org/
-12 silly mapToRegistry uri https://registry.npmjs.org/unique-customer-name
-13 verbose request uri https://registry.npmjs.org/unique-customer-name
-14 verbose request no auth needed
-15 info attempt registry request try #1 at 2:56:53 PM
-16 verbose request using bearer token for auth
-17 verbose request id 4e0630bb56242992
-18 http request GET https://registry.npmjs.org/unique-customer-name
-19 http 404 https://registry.npmjs.org/unique-customer-name
-20 verbose headers { 'content-type': 'application/json',
-20 verbose headers   'cache-control': 'max-age=0',
-20 verbose headers   'content-length': '2',
-20 verbose headers   'accept-ranges': 'bytes',
-20 verbose headers   date: 'Sat, 03 Sep 2016 09:26:54 GMT',
-20 verbose headers   via: '1.1 varnish',
-20 verbose headers   connection: 'keep-alive',
-20 verbose headers   'x-served-by': 'cache-sin6920-SIN',
-20 verbose headers   'x-cache': 'MISS',
-20 verbose headers   'x-cache-hits': '0',
-20 verbose headers   'x-timer': 'S1472894814.452546,VS0,VE237',
-20 verbose headers   vary: 'Accept-Encoding' }
-21 silly get cb [ 404,
-21 silly get   { 'content-type': 'application/json',
-21 silly get     'cache-control': 'max-age=0',
-21 silly get     'content-length': '2',
-21 silly get     'accept-ranges': 'bytes',
-21 silly get     date: 'Sat, 03 Sep 2016 09:26:54 GMT',
-21 silly get     via: '1.1 varnish',
-21 silly get     connection: 'keep-alive',
-21 silly get     'x-served-by': 'cache-sin6920-SIN',
-21 silly get     'x-cache': 'MISS',
-21 silly get     'x-cache-hits': '0',
-21 silly get     'x-timer': 'S1472894814.452546,VS0,VE237',
-21 silly get     vary: 'Accept-Encoding' } ]
-22 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/unique-customer-name
-22 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
-22 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
-22 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
-22 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
-22 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
-22 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
-22 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1082:10)
-22 silly fetchPackageMetaData     at emitOne (events.js:82:20)
-22 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
-22 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
-22 silly fetchPackageMetaData  error for unique-customer-name { [Error: Registry returned 404 for GET on https://registry.npmjs.org/unique-customer-name] pkgid: 'unique-customer-name', statusCode: 404, code: 'E404' }
-23 silly rollbackFailedOptional Starting
-24 silly rollbackFailedOptional Finishing
-25 silly runTopLevelLifecycles Starting
-26 silly runTopLevelLifecycles Finishing
-27 silly install printInstalled
-28 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/unique-customer-name
-28 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
-28 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
-28 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
-28 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
-28 verbose stack     at emitTwo (events.js:87:13)
-28 verbose stack     at Request.emit (events.js:172:7)
-28 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1082:10)
-28 verbose stack     at emitOne (events.js:82:20)
-28 verbose stack     at Request.emit (events.js:169:7)
-28 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
-29 verbose statusCode 404
-30 verbose pkgid unique-customer-name
-31 verbose cwd E:\work\jslibrary
-32 error Windows_NT 10.0.10586
-33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "unique-customer-name"
-34 error node v5.4.0
-35 error npm  v3.3.12
-36 error code E404
-37 error 404 Registry returned 404 for GET on https://registry.npmjs.org/unique-customer-name
-37 error 404
-37 error 404 'unique-customer-name' is not in the npm registry.
-37 error 404 You should bug the author to publish it (or use the name yourself!)
-37 error 404
-37 error 404 Note that you can also install from a
-37 error 404 tarball, folder, http url, or git url.
-38 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'E:\\work\\jslibrary',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Ash\AppData\Roaming\npm-cache\jslibrary\1.0.0\package.tgz not in flight; packing
+9 info lifecycle jslibrary@1.0.0~prepublish: jslibrary@1.0.0
+10 silly lifecycle jslibrary@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ 'C:\\Users\\Ash\\AppData\\Roaming\\npm-cache\\jslibrary\\1.0.0\\package.tgz',
+11 verbose tar pack   'E:\\work\\jslibrary' ]
+12 verbose tarball C:\Users\Ash\AppData\Roaming\npm-cache\jslibrary\1.0.0\package.tgz
+13 verbose folder E:\work\jslibrary
+14 verbose addLocalTarball adding from inside cache C:\Users\Ash\AppData\Roaming\npm-cache\jslibrary\1.0.0\package.tgz
+15 silly cache afterAdd jslibrary@1.0.0
+16 verbose afterAdd C:\Users\Ash\AppData\Roaming\npm-cache\jslibrary\1.0.0\package\package.json not in flight; writing
+17 verbose afterAdd C:\Users\Ash\AppData\Roaming\npm-cache\jslibrary\1.0.0\package\package.json written
+18 silly publish { name: 'jslibrary',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'this is the testing jslibrary learning tutorial',
+18 silly publish   main: 'src/index.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/aksharma05/jslibrary.git' },
+18 silly publish   keywords: [ 'jslibrary' ],
+18 silly publish   author: { name: 'ashish', email: 'mypage.vicky@gmail.com' },
+18 silly publish   license: 'MIT',
+18 silly publish   bugs: { url: 'https://github.com/aksharma05/jslibrary/issues' },
+18 silly publish   homepage: 'https://github.com/aksharma05/jslibrary#readme',
+18 silly publish   dependencies: { 'unique-random-array': '1.0.0' },
+18 silly publish   readme: '��#\u0000 \u0000j\u0000s\u0000l\u0000i\u0000b\u0000r\u0000a\u0000r\u0000y\u0000\r\u0000\n\u0000',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '5c3e15fae0a54e94be279080a9f7fdc5616cfe6c',
+18 silly publish   _id: 'jslibrary@1.0.0',
+18 silly publish   _shasum: 'a7f8c78aba9d6ba715e169fd4c15bc8bceb10aa8',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name jslibrary
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/jslibrary
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading C:\Users\Ash\AppData\Roaming\npm-cache\jslibrary\1.0.0\package.tgz
+26 verbose request uri https://registry.npmjs.org/jslibrary
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 5:11:04 PM
+29 verbose request using bearer token for auth
+30 verbose request id d651af391ed76ff6
+31 http request PUT https://registry.npmjs.org/jslibrary
+32 http 403 https://registry.npmjs.org/jslibrary
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '103',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Sat, 03 Sep 2016 11:41:05 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1472902865.059424,VS0,VE819',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 verbose request invalidating C:\Users\Ash\AppData\Roaming\npm-cache\registry.npmjs.org\jslibrary on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: you do not have permission to publish "jslibrary". Are you logged in as the correct user? : jslibrary
+36 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+36 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+36 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid jslibrary
+39 verbose cwd E:\work\jslibrary
+40 error Windows_NT 10.0.10586
+41 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+42 error node v5.4.0
+43 error npm  v3.3.12
+44 error code E403
+45 error you do not have permission to publish "jslibrary". Are you logged in as the correct user? : jslibrary
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
